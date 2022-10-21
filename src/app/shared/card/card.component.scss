@@ -54,33 +54,3 @@
     font-size: 10px;
   }
 }
-
-// .card-description {
-//   position: relative;
-//   padding: 8px;
-//   @include user-select(none);
-//   &__title {
-//     text-align: center;
-//     font-weight: 600;
-//     margin-bottom: 8px;
-//   }
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     top: -6px;
-//     background-color: $c1;
-//     width: 12px;
-//     height: 12px;
-//     @include transform(rotate(45deg));
-//     left: 20px;
-//   }
-//   &__description {
-//     text-align: center;
-
-//     width: 230px;
-//     height: 82px;
-//     white-space: wrap;
-//     text-overflow: ellipsis;
-//     overflow: hidden;
-//   }
-// }

@@ -2,7 +2,6 @@
 @import "abstracts/mixins/mixin.scss";
 .container {
   min-height: calc(100% - 140px);
-  // background-color: $c7;
   display: flex;
   justify-content: center;
 }
