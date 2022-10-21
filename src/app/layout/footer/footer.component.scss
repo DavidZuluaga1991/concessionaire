@@ -1,18 +1,51 @@
 @import "abstracts/colors/colors.scss";
 @import "abstracts/mixins/mixin.scss";
+@import "abstracts/responsive/responsive.scss";
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $c3;
-  height: szrem(80);
-  padding-left: szrem(5);
-  padding-right: szrem(5);
+  // height: szrem(80);
+  padding: szrem(20) szrem(5);
 }
 .content-footer {
   @include size-content();
   &__title {
     margin: 0;
+  }
+}
+
+.rights-reserved {
+  color: $c1;
+  &__description {
+    margin: 0;
+    width: 100%;
+  }
+
+  @include brp(480) {
+    display: flex;
+    &__description {
+      width: 64.8%;
+    }
+  }
+
+  @include brp(1024) {
+    &__description {
+      width: 41.8%;
+    }
+  }
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  &__img {
+    width: 20px;
+  }
+  @include brp(480) {
+    margin: 0 0 0 auto;
+    display: block;
   }
 }

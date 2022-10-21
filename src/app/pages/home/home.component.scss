@@ -1,6 +1,21 @@
 @import "abstracts/colors/colors.scss";
 @import "abstracts/mixins/mixin.scss";
 
+.home {
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+  &__subtitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: $c8;
+  }
+}
+
 .container-cars {
   &__title {
     text-align: center;
@@ -8,6 +23,11 @@
     font-size: 22px;
     color: $c3;
   }
+}
+
+.content-filters {
+  display: flex;
+  justify-content: center;
 }
 
 .container-search {

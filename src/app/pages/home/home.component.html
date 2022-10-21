@@ -1,10 +1,13 @@
 <div class="home">
   <h2 class="home__title">Alquiler de vehículos</h2>
-  <div class="container-search" *ngIf="brands.length > 0">
-    <app-autocomplete
-      [data]="brands"
-      (search)="filterAction($event)"
-    ></app-autocomplete>
+  <h3 class="home__subtitle">Carros nuevos, semi-nuevos y usados.</h3>
+  <div class="content-filters">
+    <div class="container-search" *ngIf="brands.length > 0">
+      <app-autocomplete
+        [data]="brands"
+        (search)="filterAction($event)"
+      ></app-autocomplete>
+    </div>
   </div>
   <div class="container-cars">
     <ng-container *ngFor="let data of tempCars">
