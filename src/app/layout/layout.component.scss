@@ -1,0 +1,12 @@
+@import "abstracts/colors/colors.scss";
+@import "abstracts/mixins/mixin.scss";
+.container {
+  min-height: calc(100% - 140px);
+  // background-color: $c7;
+  display: flex;
+  justify-content: center;
+}
+.container-data {
+  padding: szrem(15) szrem(5);
+  @include size-content();
+}

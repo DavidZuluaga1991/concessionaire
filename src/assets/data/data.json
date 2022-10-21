@@ -1,0 +1,158 @@
+[
+  {
+    "brand": {
+      "id": "1",
+      "description": "CHEVROLET"
+    },
+    "cars": [
+      {
+        "title": "Chevrolet Onix 2020",
+        "year": 2020,
+        "model": "ONIX",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "condition": {
+          "id": "1",
+          "description": "Usado"
+        },
+        "brand": {
+          "id": "1",
+          "description": "CHEVROLET"
+        },
+        "country": {
+          "language": "es",
+          "currency": "COP",
+          "code": "CO"
+        },
+        "price": {
+          "value": 500000
+        },
+        "images": [
+          {
+            "id": "1",
+            "url": "https://http2.mlstatic.com/D_NQ_NP_675019-MCO51889454907_102022-C.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Chevrolet Onix 2021",
+        "year": 2018,
+        "model": "SAIL",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "condition": {
+          "id": "1",
+          "description": "Usado"
+        },
+        "brand": {
+          "id": "1",
+          "description": "CHEVROLET"
+        },
+        "country": {
+          "language": "es",
+          "currency": "COP",
+          "code": "CO"
+        },
+        "price": {
+          "value": 2000000
+        },
+        "images": [
+          {
+            "id": "1",
+            "url": "https://secure-developments.com/commonwealth/ecuador/gm_forms/assets/front/images/jellys/60ddf13012183.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "brand": {
+      "id": "2",
+      "description": "NISSAN"
+    },
+    "cars": [
+      {
+        "title": "NISSAN 2015",
+        "year": 2015,
+        "model": "VERSA",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "condition": {
+          "id": "1",
+          "description": "Usado"
+        },
+        "brand": {
+          "id": "1",
+          "description": "NISSAN"
+        },
+        "country": {
+          "language": "es",
+          "currency": "COP",
+          "code": "CO"
+        },
+        "price": {
+          "value": 47500000
+        },
+        "images": [
+          {
+            "id": "1",
+            "url": "https://http2.mlstatic.com/D_NQ_NP_980859-MCO51824322580_102022-W.jpg"
+          }
+        ]
+      },
+      {
+        "title": "NISSAN Picanto 2020",
+        "year": 2022,
+        "model": "QASHQAI",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "condition": {
+          "id": "1",
+          "description": "Nuevo"
+        },
+        "brand": {
+          "id": "1",
+          "description": "NISSAN"
+        },
+        "country": {
+          "language": "es",
+          "currency": "COP",
+          "code": "CO"
+        },
+        "price": {
+          "value": 47500000
+        },
+        "images": [
+          {
+            "id": "1",
+            "url": "https://www.elcarrocolombiano.com/wp-content/uploads/2022/05/20220512-NISSAN-QASHQAI-2022-TURBO-NUEVA-GENERACION-COLOMBIA-PRECIO-CARACTERISTICAS-VERSIONES-VIDEO-01.jpg"
+          }
+        ]
+      },
+      {
+        "title": "NISSAN 2016",
+        "year": 2016,
+        "model": "VERSA",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "condition": {
+          "id": "1",
+          "description": "Usado"
+        },
+        "brand": {
+          "id": "1",
+          "description": "NISSAN"
+        },
+        "country": {
+          "language": "es",
+          "currency": "COP",
+          "code": "CO"
+        },
+        "price": {
+          "value": 47900000
+        },
+        "images": [
+          {
+            "id": "1",
+            "url": "https://vrm.pics/inv/3/N1CN7AP/7HL/856738/1/spincar/785b9b015e19402285a507e0c2008f6b_1.jpg?width=400"
+          }
+        ]
+      }
+    ]
+  }
+]

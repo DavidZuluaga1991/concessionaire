@@ -1,0 +1,17 @@
+<div class="autocomplete">
+  <input
+    type="search"
+    class="autocomplete__input"
+    [(ngModel)]="dataField"
+    list="data"
+    autocomplete="off"
+    placeholder="Select your brand favorite"
+    (change)="sendData()"
+    (keyup)="sendData()"
+  />
+  <datalist id="data" class="list-data">
+    <option *ngFor="let word of data" [value]="word" class="list-data__option">
+      {{ word }}
+    </option>
+  </datalist>
+</div>

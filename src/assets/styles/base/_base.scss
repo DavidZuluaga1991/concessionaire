@@ -1,0 +1,49 @@
+@mixin vendor-prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{"-" + $prefix + "-" + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin border-radius($br) {
+  @include vendor-prefix(border-radius, $br, webkit moz ms o);
+}
+
+@mixin box-shadow($br: none) {
+  @include vendor-prefix(box-shadow, $br, webkit moz);
+}
+
+@mixin user-select($br: none) {
+  @include vendor-prefix(user-select, $br, webkit moz ms);
+}
+
+@mixin transform($br) {
+  @include vendor-prefix(transform, $br, webkit moz ms o);
+}
+
+@mixin wh($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@function szrem($value_px, $base: 16) {
+  @return ($value_px / $base) + rem;
+}
+
+@mixin placeholder {
+  &::-ms-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::placeholder {
+    @content;
+  }
+}

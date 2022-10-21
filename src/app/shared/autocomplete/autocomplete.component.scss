@@ -1,0 +1,20 @@
+@import "abstracts/colors/colors.scss";
+@import "abstracts/mixins/mixin.scss";
+
+.autocomplete {
+  width: 288px;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  &__input {
+    padding: 10px 15px;
+    @include border-radius(20px);
+    width: 100%;
+    border: 1px solid $c7;
+    text-transform: uppercase;
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "abstracts/colors/colors.scss";
+@import "abstracts/mixins/mixin.scss";
+.modal {
+  position: fixed;
+  z-index: +9;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $r1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

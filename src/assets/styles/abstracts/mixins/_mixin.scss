@@ -1,0 +1,41 @@
+@import "./../colors/colors.scss";
+@import "index.scss";
+@mixin scroll($color: $c7) {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    @include wh(8px);
+    -webkit-appearance: none;
+    background-color: $c0;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 67px;
+    background-color: $color;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+
+@mixin size-content($size: 1366) {
+  max-width: szrem($size);
+  width: 100%;
+}
+
+@mixin button-triangle() {
+  cursor: pointer;
+  border: 0;
+  @include wh(szrem(40), szrem(40));
+  @include border-radius(szrem(40));
+  &__triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid $c2;
+    @include transform(rotate(-90deg));
+    display: block;
+  }
+}

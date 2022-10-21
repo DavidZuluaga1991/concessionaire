@@ -1,0 +1,67 @@
+<div class="home">
+  <h2 class="home__title">Alquiler de vehículos</h2>
+  <div class="container-search" *ngIf="brands.length > 0">
+    <app-autocomplete
+      [data]="brands"
+      (search)="filterAction($event)"
+    ></app-autocomplete>
+  </div>
+  <div class="container-cars">
+    <ng-container *ngFor="let data of tempCars">
+      <h4 class="container-cars__title">
+        {{ data.brand.description }}
+      </h4>
+      <section class="container-cars-section">
+        <ng-container *ngFor="let car of data.cars; let i = index">
+          <app-card [car]="car" (click)="selectedCar(car, i)"></app-card>
+        </ng-container>
+      </section>
+    </ng-container>
+  </div>
+</div>
+
+<app-modal *ngIf="carModal">
+  <div class="content-modal">
+    <button class="content-modal-close" (click)="close()">
+      <img src="./assets/images/close.svg" alt="" />
+    </button>
+    <img
+      class="content-modal__img"
+      [src]="carModal.images[0].url"
+      alt="images car"
+    />
+    <div class="content-data-main">
+      <h4 class="content-data-main__brand">
+        {{ carModal.brand.description }}
+      </h4>
+      <h4 class="content-data-main__price">
+        {{ carModal.price.value | currencyCustom: carModal.country }}
+      </h4>
+      <h5 class="content-data-main__model">
+        {{ carModal.model }} ( {{ carModal.year }} )
+      </h5>
+      <h5 class="content-data-main__condition">
+        {{ carModal.condition.description }}
+      </h5>
+    </div>
+    <p class="content-modal__description">
+      {{ indexCarModal }}{{ carModal.description }}
+    </p>
+    <div class="content-modal-actions">
+      <button
+        class="content-modal-actions-back"
+        title="Ver anterior"
+        (click)="changePublication(carModal.brand.description)"
+      >
+        <span class="content-modal-actions-back__triangle"></span>
+      </button>
+      <button
+        class="content-modal-actions-next"
+        title="Ver siguiente"
+        (click)="changePublication(carModal.brand.description, true)"
+      >
+        <span class="content-modal-actions-next__triangle"></span>
+      </button>
+    </div>
+  </div>
+</app-modal>

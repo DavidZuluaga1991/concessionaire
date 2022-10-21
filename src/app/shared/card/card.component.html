@@ -1,0 +1,17 @@
+<div class="card" *ngIf="car">
+  <img [src]="car.images[0].url" alt="image" class="card__img" />
+
+  <div class="card-description">
+    <div class="card-description-value">
+      <p class="card-description-value__total">
+        {{ car.price.value | currencyCustom: car.country }}
+      </p>
+      <p class="card-description-value__description-total">
+        Valor total del vehiculo
+      </p>
+    </div>
+    <hr class="card-description__separate" />
+    <h4 class="card-description__brand">{{ car.brand.description }}</h4>
+    <h5 class="card-description__model">{{ car.model }} ( {{ car.year }} )</h5>
+  </div>
+</div>
