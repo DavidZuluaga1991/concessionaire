@@ -10,8 +10,12 @@
     (keyup)="sendData()"
   />
   <datalist id="data" class="list-data">
-    <option *ngFor="let word of data" [value]="word" class="list-data__option">
-      {{ word }}
+    <option
+      *ngFor="let word of data"
+      [value]="word.description"
+      class="list-data__option"
+    >
+      {{ word.description }}
     </option>
   </datalist>
 </div>

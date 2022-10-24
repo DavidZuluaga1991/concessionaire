@@ -1,0 +1,26 @@
+@import "abstracts/colors/colors.scss";
+@import "abstracts/mixins/mixin.scss";
+.options {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.option {
+  margin-bottom: 5px;
+  display: flex;
+  &__radio {
+    display: none;
+  }
+  &__label {
+    border: 1px solid $c6;
+    @include border-radius(szrem(19));
+    padding: szrem(5) szrem(15);
+    cursor: pointer;
+    font-weight: 500;
+  }
+  &__radio:checked + &__label {
+    background-color: $c7;
+    color: $c1;
+  }
+}

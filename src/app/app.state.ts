@@ -1,5 +1,7 @@
 import { CarsByBrand } from './core/models/carsByBrand.model';
+import { Filter } from './core/models/filters.model';
 
 export interface AppState {
-  readonly cars: CarsByBrand[];
+  cars: CarsByBrand[];
+  filter: Filter;
 }

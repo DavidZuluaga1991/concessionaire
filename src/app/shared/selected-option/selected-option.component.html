@@ -1,0 +1,16 @@
+<div class="options">
+  <div *ngFor="let condition of data; let i = index" class="option">
+    <input
+      class="option__radio"
+      type="radio"
+      name="options"
+      id="option{{ i }}"
+      [(ngModel)]="dataSelected"
+      [value]="condition"
+      (click)="selectOption(condition)"
+    />
+    <label class="option__label" for="option{{ i }}">{{
+      condition.description
+    }}</label>
+  </div>
+</div>

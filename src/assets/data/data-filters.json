@@ -1,0 +1,36 @@
+{
+  "results": {
+    "conditions": [
+      {
+        "id": "1",
+        "description": "TODOS"
+      },
+      {
+        "id": "2",
+        "description": "NUEVO"
+      },
+      {
+        "id": "3",
+        "description": "USADO"
+      },
+      {
+        "id": "4",
+        "description": "SEMINUEVO"
+      }
+    ],
+    "brands": [
+      {
+        "id": "1",
+        "description": "CHEVROLET"
+      },
+      {
+        "id": "2",
+        "description": "NISSAN"
+      },
+      {
+        "id": "3",
+        "description": "KIA"
+      }
+    ]
+  }
+}

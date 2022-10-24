@@ -23,6 +23,25 @@
     font-size: 22px;
     color: $c3;
   }
+  &--error {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.container-cars-error {
+  width: 350px;
+  background-color: $c3;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  @include box-shadow(0px 0px 5px 1px rgba($c2, 0.2));
+  color: $c1;
 }
 
 .content-filters {

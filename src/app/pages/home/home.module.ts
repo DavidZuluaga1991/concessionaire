@@ -7,6 +7,7 @@ import { CardModule } from 'src/app/shared/card/card.module';
 import { ModalModule } from 'src/app/shared/modal/modal.module';
 import { AutocompleteModule } from 'src/app/shared/autocomplete/autocomplete.module';
 import { PipesModule } from 'src/app/core/pipes/pipes.module';
+import { SelectedOptionModule } from 'src/app/shared/selected-option/selected-option.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -17,6 +18,7 @@ import { PipesModule } from 'src/app/core/pipes/pipes.module';
     ModalModule,
     AutocompleteModule,
     PipesModule,
+    SelectedOptionModule,
   ],
 })
 export class HomeModule {}

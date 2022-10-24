@@ -36,6 +36,7 @@ $car-showcase-theme: mat.define-light-theme(
 
 /* You can add global styles to this file, and also import other style files */
 @import url("./assets/styles/abstracts/reset/reset.scss");
+@import "./assets/styles/abstracts/mixins/mixin.scss";
 
 html,
 body {
@@ -44,4 +45,8 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  @include scroll($color: $c8);
 }

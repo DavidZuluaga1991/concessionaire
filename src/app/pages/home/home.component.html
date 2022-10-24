@@ -2,14 +2,24 @@
   <h2 class="home__title">Alquiler de vehículos</h2>
   <h3 class="home__subtitle">Carros nuevos, semi-nuevos y usados.</h3>
   <div class="content-filters">
+    <app-selected-option
+      [data]="conditions"
+      (selectedOption)="filterByCondition($event)"
+    ></app-selected-option>
+    <div class="content-filters-options"></div>
+  </div>
+  <div class="content-filters">
     <div class="container-search" *ngIf="brands.length > 0">
       <app-autocomplete
         [data]="brands"
-        (search)="filterAction($event)"
+        (search)="filterByBrand($event)"
       ></app-autocomplete>
     </div>
   </div>
-  <div class="container-cars">
+  <div
+    class="container-cars"
+    [ngClass]="{ 'container-cars--error': tempCars.length <= 0 }"
+  >
     <ng-container *ngFor="let data of tempCars">
       <h4 class="container-cars__title">
         {{ data.brand.description }}
@@ -19,6 +29,11 @@
           <app-card [car]="car" (click)="selectedCar(car, i)"></app-card>
         </ng-container>
       </section>
+    </ng-container>
+    <ng-container *ngIf="tempCars.length <= 0 && cars.length > 0">
+      <div class="container-cars-error">
+        Lo sentimos no encontramos la busqueda solicitada!
+      </div>
     </ng-container>
   </div>
 </div>
